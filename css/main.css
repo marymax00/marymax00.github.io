@@ -1080,8 +1080,9 @@ pre .javascript .function {
   bottom: 30px;
 }
 .header {
-  background: transparent;
+    background: transparent
 }
+
 .header-inner {
   position: relative;
 }
