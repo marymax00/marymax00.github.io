@@ -2051,7 +2051,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffe021;
+  background: #d041ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3304,8 +3304,9 @@ body {
   border-bottom-color: #649ab6;
   border-bottom: none;
 }
-.site-meta .site-title {
+.site-title {
   font-size: 28px;
+  color: #f4efe3;
   font-family: 'Comic Sans MS', sans-serif;
 }
 @-moz-keyframes heartAnimate {
