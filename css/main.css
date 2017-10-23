@@ -2051,7 +2051,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff6667;
+  background: #775e12;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3244,24 +3244,19 @@ img:hover {
   color: #0477ab;
   text-decoration: underline;
 }
-#heart {
-  animation: heartAnimate 1.33s ease-in-out infinite;
-}
-.with-love {
-  color: #ff71a8;
-}
 .posts-expand .post-eof {
   display: block;
   margin: 80px auto 60px;
-  width: 100%;
+  width: 80%;
   height: 1px;
   text-align: center;
 }
 body {
   background-image: url("/images/background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 50% 50%;
+  background-position: center;
 }
 .post-nav {
   border: none;
@@ -3285,15 +3280,6 @@ body {
 .post-button a:hover {
   color: #7784ba;
 }
-.footer {
-  background: none;
-  font-size: 16px;
-}
-.footer-inner {
-  font-family: 'Comic Sans MS', sans-serif;
-  text-align: center;
-  color: #555;
-}
 .site-author-name {
   margin: 48px 0 0;
   color: #090909;
@@ -3304,10 +3290,14 @@ body {
   border-bottom-color: #649ab6;
   border-bottom: none;
 }
-.site-title {
+.site-meta {
+  margin-left: 0px;
+  text-align: center;
+}
+.site-meta .site-title {
   font-size: 28px;
-  color: #f4efe3;
   font-family: 'Comic Sans MS', sans-serif;
+  color: #ffe4e1;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
