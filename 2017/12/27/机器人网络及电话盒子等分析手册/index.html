@@ -16,8 +16,8 @@
 
 <script>
     (function(){
-        if('yunji'){
-            if (prompt('不给密码就捣蛋') !== 'yunji'){
+        if(''){
+            if (prompt('不给密码就捣蛋') !== ''){
                 alert('瞎懵啥啊！');
                 history.back();
             }
@@ -114,21 +114,23 @@
 
 
 
-<meta name="description" content="机器人在实际酒店任务中会出现由于网络错误/电话盒子等原因导致任务失败的情况，所以本文档主要涵盖以下几部分：   * 华为卡托配置及飞猫卡诊断    * 电话/电梯路由器网络    * 电话盒子常见故障处理   准备好了么？那就开始吧！">
+<meta name="description" content="机器人在实际酒店任务中会出现由于网络错误/电话盒子等原因导致任务失败的情况，所以本文档主要涵盖以下几部分：   * 华为卡托配置    * 飞猫卡网络诊断    * 电话/电梯路由器网络    * 电话盒子常见故障处理   准备好了么？那就开始吧！">
 <meta name="keywords" content="飞猫上网卡 电话盒子">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器人网络及电话盒子等分析手册">
 <meta property="og:url" content="http://yoursite.com/2017/12/27/机器人网络及电话盒子等分析手册/index.html">
 <meta property="og:site_name" content="MTDBYY">
-<meta property="og:description" content="机器人在实际酒店任务中会出现由于网络错误/电话盒子等原因导致任务失败的情况，所以本文档主要涵盖以下几部分：   * 华为卡托配置及飞猫卡诊断    * 电话/电梯路由器网络    * 电话盒子常见故障处理   准备好了么？那就开始吧！">
+<meta property="og:description" content="机器人在实际酒店任务中会出现由于网络错误/电话盒子等原因导致任务失败的情况，所以本文档主要涵盖以下几部分：   * 华为卡托配置    * 飞猫卡网络诊断    * 电话/电梯路由器网络    * 电话盒子常见故障处理   准备好了么？那就开始吧！">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://owtzhtnqf.bkt.clouddn.com/robot.jpg">
 <meta property="og:image" content="http://owtzhtnqf.bkt.clouddn.com/shangwangka.jpeg">
 <meta property="og:image" content="http://owtzhtnqf.bkt.clouddn.com/login.jpeg">
-<meta property="og:updated_time" content="2017-12-27T09:51:32.061Z">
+<meta property="og:image" content="http://owtzhtnqf.bkt.clouddn.com/ssid.jpeg">
+<meta property="og:image" content="http://owtzhtnqf.bkt.clouddn.com/adminp.jpeg">
+<meta property="og:updated_time" content="2018-01-04T03:24:20.896Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器人网络及电话盒子等分析手册">
-<meta name="twitter:description" content="机器人在实际酒店任务中会出现由于网络错误/电话盒子等原因导致任务失败的情况，所以本文档主要涵盖以下几部分：   * 华为卡托配置及飞猫卡诊断    * 电话/电梯路由器网络    * 电话盒子常见故障处理   准备好了么？那就开始吧！">
+<meta name="twitter:description" content="机器人在实际酒店任务中会出现由于网络错误/电话盒子等原因导致任务失败的情况，所以本文档主要涵盖以下几部分：   * 华为卡托配置    * 飞猫卡网络诊断    * 电话/电梯路由器网络    * 电话盒子常见故障处理   准备好了么？那就开始吧！">
 <meta name="twitter:image" content="http://owtzhtnqf.bkt.clouddn.com/robot.jpg">
 
 
@@ -429,11 +431,16 @@
 
       
         <blockquote>
-<p>机器人在实际酒店任务中会出现由于网络错误/电话盒子等原因导致任务失败的情况，所以本文档主要涵盖以下几部分：<br>  <strong> * 华为卡托配置及飞猫卡诊断 </strong><br>  <strong> * 电话/电梯路由器网络 </strong><br>  <strong> * 电话盒子常见故障处理 </strong></p>
+<p>机器人在实际酒店任务中会出现由于网络错误/电话盒子等原因导致任务失败的情况，所以本文档主要涵盖以下几部分：<br>  <strong> * <a href="#jump1">华为卡托配置</a> </strong><br>  <strong> * <a href="#jump2">飞猫卡网络诊断</a> </strong><br>  <strong> * <a href="#jump3">电话/电梯路由器网络</a> </strong><br>  <strong> * <a href="#jump4">电话盒子常见故障处理</a> </strong></p>
 </blockquote>
 <p>准备好了么？那就开始吧！<br><img src="http://owtzhtnqf.bkt.clouddn.com/robot.jpg" alt="" title="伟岸的战士们"><br><a id="more"></a></p>
-<h1 id="华为卡托配置及网络诊断"><a href="#华为卡托配置及网络诊断" class="headerlink" title=" 华为卡托配置及网络诊断 "></a><strong> 华为卡托配置及网络诊断 </strong></h1><h2 id="华为卡托配置"><a href="#华为卡托配置" class="headerlink" title=" 华为卡托配置 "></a><strong> 华为卡托配置 </strong></h2><p>  机器人任务流程中打电话/呼叫电梯等都离不开网络,目前我们所使用的是<strong>华为上网卡+飞猫物联卡</strong>.<br> 一台全新的机器人出厂时,工厂会自动配置好华为卡托,目前型号有两种:<strong>E8231</strong>(只支持3g)/<strong>E8372h-155</strong>(全网通支持4G),由于4G信号较好,除了早期部署时使用的老卡托，目前大多数都是使用后者全网通.工厂配置步骤此处省略,这里我们着重介绍下,机器人换卡后,如何配置华为卡托.<br>  <strong> 1.连接华为上网卡配置主页面192.168.8.1 </strong><br>两种方式:<br>1)上网卡直连电脑usb口,等待一会本地会拿到从上网卡分配而来的地址,一般默认为192.168.8.100,浏览器直接访问192.168.8.1<br>2)如果上网卡已经接在机器人里面,采用第一种方式比较麻烦,所以本地直接连接上网卡默认wifi(HUAWEI-XXXX),密码查询方式如下,打开网卡后盖,可见ssid/key/ip等信息,其中ssid即为wifi名称,key为密码,ip为上网卡登录页面.<br><img src="http://owtzhtnqf.bkt.clouddn.com/shangwangka.jpeg" alt="" title="解剖现场= =#"><br>  ** 2.登录<br><img src="http://owtzhtnqf.bkt.clouddn.com/login.jpeg" alt=""></p>
-<p>ps: 六点了，高估了自己，实在写不完了,to be continued….</p>
+<h1 id="华为卡托配置"><a href="#华为卡托配置" class="headerlink" title="华为卡托配置"></a><span id="jump1"><strong>华为卡托配置</strong></span></h1><p>  机器人任务流程中打电话/呼叫电梯等都离不开网络,目前我们所使用的是<strong>华为上网卡+飞猫物联卡</strong>.<br> 一台全新的机器人出厂时,工厂会自动配置好华为卡托,目前型号有两种:<strong>E8231</strong>(只支持3g)/<strong>E8372h-155</strong>(全网通支持4G),由于4G信号较好,除了早期部署时使用的老卡托，目前大多数都是使用后者全网通.工厂配置步骤此处省略,这里我们着重介绍下,机器人换卡后,如何给一个新的华为卡托进行配置.  </p>
+<h2 id="浏览器访问卡托设置主页面192-168-8-1"><a href="#浏览器访问卡托设置主页面192-168-8-1" class="headerlink" title=" 浏览器访问卡托设置主页面192.168.8.1 "></a><strong> 浏览器访问卡托设置主页面192.168.8.1 </strong></h2><p>两种方式:<br>1)上网卡直连电脑usb口,等待一会本地会拿到从上网卡分配而来的地址,一般默认为192.168.8.100,浏览器直接访问192.168.8.1<br>2)如果上网卡已经接在机器人里面,采用第一种方式比较麻烦,所以本地直接连接上网卡默认wifi(HUAWEI-XXXX),密码查询方式如下,打开网卡后盖,可见ssid/key/ip等信息,其中ssid即为wifi名称,key为密码,ip为上网卡登录页面.<br><img src="http://owtzhtnqf.bkt.clouddn.com/shangwangka.jpeg" alt="" title="解剖现场= =#"></p>
+<h2 id="登录"><a href="#登录" class="headerlink" title=" 登录 "></a><strong> 登录 </strong></h2><p><img src="http://owtzhtnqf.bkt.clouddn.com/login.jpeg" alt=""><br>用户名:admin 登录密码:admin</p>
+<h2 id="修改上网卡ssid及密码"><a href="#修改上网卡ssid及密码" class="headerlink" title=" 修改上网卡ssid及密码"></a><strong> 修改上网卡ssid及密码</strong></h2><p>1)登录后点主页面设置按钮 <em>1</em><br>2)选择WLAN, WLAN基本设置 <em>2</em><br>3)把默认ssid修改为<strong>wukongXXXX</strong>,其中XXXX为机器人编号 <em>3</em><br>4)修改WLAN秘钥,密码改为<strong>bcdd2e949</strong> <em>4</em><br>5)点击应用按钮进行保存操作 <em>5</em><br><img src="http://owtzhtnqf.bkt.clouddn.com/ssid.jpeg" alt=""></p>
+<h2 id="修改admin登录密码"><a href="#修改admin登录密码" class="headerlink" title=" 修改admin登录密码"></a><strong> 修改admin登录密码</strong></h2><p>1)选择主页面设置按钮 <em>1</em><br>2)选择系统,修改密码 <em>2</em><br>3)填入当前密码 <em>3</em><br>4)填入新密码 <em>4</em><br>5)确认新密码 <em>5</em><br>6)点击应用按钮进行保存操作 <em>6</em><br><img src="http://owtzhtnqf.bkt.clouddn.com/adminp.jpeg" alt=""><br>本小结主要详细描述如何给一个新的上网卡拖配置无线路由ssid,密码及修改admin登录密码,你都掌握了么?</p>
+<h1 id="飞猫卡网络诊断"><a href="#飞猫卡网络诊断" class="headerlink" title=" 飞猫卡网络诊断 "></a><span id="jump2"><strong> 飞猫卡网络诊断 </strong></span></h1><p>  在实际运行环境中,我们会听到机器人播报语音,<strong>“我的网络出错啦”</strong>,之前已经提到过,一旦网络有问题那么机器人是肯定不打电话,不呼电梯,是无法完成一趟成功的任务.那么为何会网络错误呢?目前看来一般由于几下几点:<br><strong> 1)欠费停机-可登录简道云及飞猫物联查询 </strong><br><strong> 2)网络无服务-通常是酒店网络信号差导致 </strong><br><strong> 3)sim卡失联-由于飞猫卡不是大卡,机器人在多次运行中造成sim卡与卡托的接触不良导致 </strong><br>那么有没有什么方法可以简单方便的定位问题呢?我们可在机器人的PAD上,浏览器打开192.168.8.1,看下显示的相关信息,可帮助迅速推断问题.</p>
+<h1 id="电话-电梯路由器网络"><a href="#电话-电梯路由器网络" class="headerlink" title=" 电话/电梯路由器网络 "></a><span id="jump3"><strong> 电话/电梯路由器网络 </strong></span></h1><p>电话/电梯路由器的网络,一般来说都是由酒店来提供的,路由器WAN口连接酒店提供的网线.那么如何快速的确定当前路由器是否已连接网络呢?</p>
 
       
     </div>
@@ -510,6 +517,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/04/2018beginning/" rel="prev" title="2018beginning">
+                2018beginning <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -589,7 +600,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -611,7 +622,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -661,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#华为卡托配置及网络诊断"><span class="nav-number">1.</span> <span class="nav-text"> 华为卡托配置及网络诊断 </span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#华为卡托配置"><span class="nav-number">1.1.</span> <span class="nav-text"> 华为卡托配置 </span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#华为卡托配置"><span class="nav-number">1.</span> <span class="nav-text">华为卡托配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器访问卡托设置主页面192-168-8-1"><span class="nav-number">1.1.</span> <span class="nav-text"> 浏览器访问卡托设置主页面192.168.8.1 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#登录"><span class="nav-number">1.2.</span> <span class="nav-text"> 登录 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改上网卡ssid及密码"><span class="nav-number">1.3.</span> <span class="nav-text"> 修改上网卡ssid及密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改admin登录密码"><span class="nav-number">1.4.</span> <span class="nav-text"> 修改admin登录密码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#飞猫卡网络诊断"><span class="nav-number">2.</span> <span class="nav-text"> 飞猫卡网络诊断 </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#电话-电梯路由器网络"><span class="nav-number">3.</span> <span class="nav-text"> 电话/电梯路由器网络 </span></a></li></ol></div>
             
 
           </div>
@@ -684,7 +695,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love" id="heart">
     <i class="fa fa-heart"></i>
   </span>
