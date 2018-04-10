@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[pink panther]]></title>
+    <url>%2F2018%2F04%2F10%2Fpink-panther%2F</url>
+    <content type="text"><![CDATA[感谢你曾经来过就算你是个过客我也无法割舍不得 人生啊 心情和楼上那只死豹子一样甚至没有摆弄它 看了一眼它却自己摆了个pose很好保存一下或许我太不知道什么是苦了或许我身在福中已经不知道福了或许我太渴望回到小yimen这么大嘻嘻哈哈 没有烦恼祝你平安 幸福 快乐的长大小旁友 summer 也不知道想说啥单纯想写个日记吧好了结尾吧]]></content>
+      <categories>
+        <category>raving</category>
+      </categories>
+      <tags>
+        <tag>小豹子</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[I'm back again = =#]]></title>
     <url>%2F2018%2F03%2F13%2FI-m-back-again%2F</url>
     <content type="text"><![CDATA[直面这世界真假游戏，走了云的天空还任性 grep 昨天碰到个需求，需要tailf log文件，然后需要多次grep，居然发现，如果写成，tailf log|grep A |grep B,这样居然不行，搜了下大概是全缓冲区啥的，具体我也没懂说实话，但是如果真的碰到这个需求，以后可以采用以下两种做法，1‘ tailf log|grep -E “A.*B” 2’ tailf log|grep –line-buffer A|grep –line-buffer B ;亲测两种方法均可行。 对了补充下，如果碰到需要grep A或者B的情况，则这样使用，grep -E “A|B” ,记住加E，使用扩展正则表达式，否则无效。 ingress 看了下两个月前写的一篇有关ingress的文章，当时还说不怎么感兴趣呢。现在想想，又总是打脸。半夜做梦还在那连多重。我是没救了大概。感觉停不下来了喂，不行，不行，slow down; slow down～ piano 俺又重新爱上弹钢琴了喂。谢谢家人的鼓励，谢谢！不要放弃，不要放弃。坚持。坚持！ yimen 小呀么小yimen啊，真呀么真好玩啊！只是别再尿裤子了哟！！～ yimen’s uncle 大旺舅啊，腰锥突出那玩意儿赶紧好啊，快点好起来，我们还要开始计划你的宏伟大业呢！我还想入股呢！！ 更新 因为爸爸说我很久没更新博客了，我想了想，就写点东西吧。]]></content>
