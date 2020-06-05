@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins
+Disallow: /wp-content/themes
+Disallow: /feed
+Disallow: /*/feed
+Disallow: /comments/feed
+Disallow: /*.js$
+
+Disallow: /*?*
+
+Sitemap: http://www.leheseo.com/sitemap.xml
